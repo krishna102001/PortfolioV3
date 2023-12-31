@@ -1,18 +1,21 @@
-import React from 'react'
-import { Navbar } from './components/Navbar'
-import {Routes, Route} from "react-router-dom"
-import {Home} from "./components/Home"
-import {About} from "./components/About"
-import {Projects} from "./components/Projects"
+import React from "react";
+import { Navbar } from "./components/Navbar";
+import { Home } from "./components/Home";
+import { About } from "./components/About";
+import { Achievements } from "./components/Achievements";
+import { Blog } from "./components/Blog";
+import { Projects } from "./components/Projects";
 function App() {
   return (
     <>
-    <Navbar />
-    <Routes>
-      <Route path='/' element={<Navbar />} />
-    </Routes>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Achievements />
+      <Blog />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

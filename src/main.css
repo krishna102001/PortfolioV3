@@ -1,14 +1,13 @@
 a{
     text-decoration: none;
+    color: #092635 ;
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 100px;
-    padding: 20px 30px;
-    background: rgba( 255, 255, 255, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    padding: 20px 100px;
 }
 .navbar--middle{
     display: flex;
@@ -16,18 +15,26 @@ a{
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin: 0;
 }
 .navbar--middle-item{
     font-size: 1.3rem;
     font-weight: 300;
+    
 }
 .logo{
     font-size: 1.6rem;
     margin-right: auto;
     letter-spacing: 0.2rem;
-    color: #ffff;
 }
 .navbar--last-resume{
     font-size: 1.4rem;
+}
+.logo a:hover{
+    color: #1B4242;
+}
+.navbar--middle-item a:hover{
+    color: #5C8374;
+}
+.navbar--last-resume:hover{
+    transform: scale(0.8);
 }
