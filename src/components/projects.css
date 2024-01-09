@@ -1,0 +1,50 @@
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    color: #092635 ;
+}
+.box{
+    margin: 50px 0;
+    display: flex;
+    text-align: start;
+    gap: 100px;
+}
+.project--text, .project--stack{
+    font-weight: 100;
+    color: #1B4242;
+}
+.project--text{
+    font-size: 1.7rem;
+    margin-top: 10px;  
+}
+.project--stack-list{
+    margin: 10px;
+    font-style: italic;
+    font-size: 1rem;
+    list-style-type:square;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.project--stack-list li{
+    margin: 10px;
+}
+@media(max-width:425px){
+    .heading{
+        font-size: 1.7rem;
+        margin: 50px 0;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .project--text{
+        font-size: 1.3rem;
+    }
+    .project--stack-list{
+        font-size: 0.9rem;
+    }
+    .project--heading{
+        font-size: 1.6rem;
+    }
+}
