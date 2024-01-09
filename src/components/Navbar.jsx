@@ -19,9 +19,9 @@ export function Navbar() {
       </div>
       <div className="nav-toggle" style={{ display: navToggle && "block" }}>
         <ul className="navbar--middle">
-          <li className="navbar--middle-item">
+          {/* <li className="navbar--middle-item">
             <a href="#About">About</a>
-          </li>
+          </li> */}
           <li className="navbar--middle-item">
             <a href="#Projects">Projects</a>
           </li>

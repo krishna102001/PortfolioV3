@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Projects = () => {
   return (
-    <div className='box' id='Projects'>Projects</div>
+    <div className='container-fluid' id='Projects'>
+    Projects
+    </div>
   )
 }
