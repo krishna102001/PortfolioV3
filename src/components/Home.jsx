@@ -23,15 +23,15 @@ export const Home = () => {
             I m <span className="highlights">Krishna Kant</span>
           </p>
           <p>A tech enthusiast and web developer in programming World!</p>
+          <div className="contact--button">
           <Link to="/contact">
           <ThemeProvider theme={theme}>
-            
             <Button variant="contained" size="large" color="primary">
               Contact
             </Button>
-            
           </ThemeProvider>
           </Link>
+          </div>
         </div>
       </div>
       <div className="home--img">

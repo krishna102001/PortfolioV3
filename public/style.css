@@ -14,3 +14,8 @@ body{
 .container-fluid{
     margin: 10px 100px;
 }
+@media(max-width:768px){
+    .container-fluid{
+        margin: 10px 50px;
+    }
+}

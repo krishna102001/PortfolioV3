@@ -7,7 +7,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     gap: 100px;
-    padding: 20px 100px;
+    padding: 30px 100px;
     font-family: 'Roboto', sans-serif;
     flex-wrap: wrap;
 }
