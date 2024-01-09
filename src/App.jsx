@@ -1,19 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Achievements } from "./components/Achievements";
-import { Blog } from "./components/Blog";
-import { Projects } from "./components/Projects";
+import Contact from "./components/Contact";
+import Index from "./Index";
+import AdminControl from "./components/AdminControl";
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Achievements />
-      <Blog />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Index />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/adminControl" element={<AdminControl />}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }

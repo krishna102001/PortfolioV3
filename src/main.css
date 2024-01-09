@@ -8,6 +8,8 @@ a{
     justify-content: flex-start;
     gap: 100px;
     padding: 20px 100px;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
 }
 .navbar--middle{
     display: flex;
@@ -37,4 +39,29 @@ a{
 }
 .navbar--last-resume:hover{
     transform: scale(0.8);
+}
+.menu{
+    display: none;
+}
+@media(max-width:768px){
+    .navbar{
+        gap: 30px;
+        padding: 10px 100px;
+    }
+    .navbar--middle{
+        gap: 15px;
+    }
+}
+@media(max-width:425px){
+    .menu{
+        display: inline;
+        float: right;
+        transition: all 0.3s linear;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .navbar--middle{
+        flex-direction: column;
+    }
 }
