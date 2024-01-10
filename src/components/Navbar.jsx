@@ -26,13 +26,13 @@ export function Navbar() {
             <a href="#Projects">Projects</a>
           </li>
           <li className="navbar--middle-item">
-            <a href="#Achievements">Achievements</a>
+            <a href="/contact">Contact</a>
           </li>
           <li className="navbar--middle-item">
-            <a href="#Blog">Blogs</a>
+            <a href="/blog">Blogs</a>
           </li>
           <li className="navbar--middle-item">
-            <a href="/">
+            <a href="https://drive.google.com/file/d/1N-Z6In-hezR-u04z_cs7R75kU5JXvc5m/view?usp=sharing" target="_blank">
               <i className="fa-solid fa-download navbar--last-resume"></i>
             </a>
           </li>

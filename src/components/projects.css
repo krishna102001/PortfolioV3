@@ -5,10 +5,10 @@
     color: #092635 ;
 }
 .box{
-    margin: 50px 0;
+    margin: 50px 0 0;
     display: flex;
     text-align: start;
-    gap: 100px;
+    gap: 50px;
 }
 .project--text, .project--stack{
     font-weight: 100;
@@ -30,7 +30,36 @@
 .project--stack-list li{
     margin: 10px;
 }
+.box--image{
+    width: 400px;
+    height: 250px;
+    border: 2px dotted #092635;
+}
+.fa-link{
+    font-size: 1.1rem;
+}
+@media(max-width:768px){
+    .heading{
+        font-size: 1.8rem;
+    }
+    .project--text{
+        font-size: 1.4rem;
+    }
+    .project--stack-list{
+        font-size: 1rem;
+    }
+    .project--heading{
+        font-size: 1.8rem;
+    }
+    .box--image{
+        width: 300px;
+        height: 200px;
+    }
+}
 @media(max-width:425px){
+    .box{
+        gap: 20px;
+    }
     .heading{
         font-size: 1.7rem;
         margin: 50px 0;

@@ -1,22 +1,23 @@
 import React from "react";
 import "../projects.css";
-export default function ProjectComponent() {
+export default function ProjectComponent(props) {
+  // console.log(props);
+  const {id,projectName,projectImage,projectDescription,projectStack,projectGithubLink} = props.project;
   return (
-    <div className="box">
-      <div className="box--image">
-        <img src="" alt="project--image" />
+    <div className="box" key={id}>
+      <div>
+        <img src={projectImage} alt="project--image" className="box--image"/>
       </div>
       <div className="box--text">
         <div className="project--heading">
-          <h4>To Do</h4>
+          <h4>{projectName} <a href={projectGithubLink} target="_blank"><i className="fa-solid fa-link"></i></a></h4>
         </div>
         <div className="project--text">
-          <p>create a todo list website</p>
+          <p>{projectDescription}</p>
         </div>
         <div className="project--stack">
           <ul className="project--stack-list">
-            <li>React</li>
-            <li>ExpressJs</li>
+            {projectStack.map((stack)=> <li>{stack}</li>)}
           </ul>
         </div>
       </div>
